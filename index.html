@@ -28,7 +28,6 @@
         extend: {
           colors: {
             neon: '#00f3ff',
-            bgdark: '#050505'
           },
           fontFamily: {
             inter: ['Inter', 'sans-serif']
@@ -51,7 +50,7 @@
   </style>
 </head>
 
-<body class="font-inter text-gray-200">
+<body class="font-inter text-gray-200 overflow-x-hidden">
 
 <!-- NAVBAR -->
 <header class="fixed top-0 w-full z-50 backdrop-blur bg-black/60 border-b border-white/5">
@@ -70,12 +69,17 @@
 </header>
 
 <!-- HERO -->
-<section id="home" class="min-h-screen flex items-center pt-28">
-  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-14 px-6">
+<section id="home" class="min-h-screen pt-32 flex items-center">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 px-6">
+
+    <!-- LEFT -->
     <div>
       <h1 class="text-7xl font-black">Sai</h1>
       <h2 class="text-5xl font-black text-neon mt-3">Chaudhari</h2>
-      <p class="uppercase tracking-widest text-neon mt-6">AIML Engineering Student</p>
+
+      <p class="uppercase tracking-widest text-neon mt-6">
+        AIML Engineering Student
+      </p>
 
       <p class="text-gray-400 mt-6 max-w-lg">
         Explaining the intersection of neural architectures and human cognition.
@@ -88,21 +92,29 @@
       </div>
     </div>
 
-    <div class="relative flex justify-center">
-      <img src="photo.png" class="w-80 h-96 object-cover rounded-3xl shadow-glow">
+    <!-- RIGHT IMAGE -->
+    <div class="relative flex justify-center items-center">
+      <img
+        src="photo.png"
+        alt="Sai Chaudhari"
+        class="w-80 h-96 object-cover rounded-3xl shadow-glow"
+      >
 
       <div class="absolute -bottom-6 -left-6 bg-black/80 border border-neon px-5 py-3 rounded-xl shadow-glow">
         <p class="text-xs text-gray-400">CGPA</p>
         <p class="text-xl font-bold text-neon">8.4 <span class="text-sm text-gray-400">/ 10</span></p>
       </div>
     </div>
+
   </div>
 </section>
 
 <!-- EDUCATION -->
 <section id="education" class="py-32">
   <div class="max-w-5xl mx-auto px-6">
-    <h2 class="text-4xl font-bold mb-14"><span class="text-neon">—</span> Education</h2>
+    <h2 class="text-4xl font-bold mb-14">
+      <span class="text-neon">—</span> Education
+    </h2>
 
     <div class="space-y-8">
       <div class="bg-gradient-to-r from-black to-gray-900 p-8 rounded-2xl shadow-glow border border-white/5">
